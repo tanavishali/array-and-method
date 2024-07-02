@@ -44,7 +44,7 @@ console.log(concat,concat.length);
 delete concat[5]
 console.log(concat,concat.length);
 */
-// sort 
+// sort
 // sort using compare function
 /*
 let compare=(a,b)=>{
@@ -84,9 +84,9 @@ for (let index = 0; index < 4; index++) {
 }
   */
 
- // store in one array data 
- 
- /*
+// store in one array data
+
+/*
 let agecal=function (year) {
     return 2020-year;
 }
@@ -102,3 +102,119 @@ for (let index = 0; index < ages.length; index++) {
 console.log(new_array);
 
 */
+// let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(numberArray[2]);
+// let fruit = ["apple", "bananan", "orange", "mango"];
+// console.log("my favorite fruits list");
+// for (let i = 0; i < fruit.length; i++) {
+//   console.log(fruit[i]);
+// }
+
+// Write a function that takes an array and returns the sum of all elements.
+/*
+let sumNumber = function () {
+  let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  let sum = 0;
+  //   console.log(sum);
+  for (let i = 0; i < numberArray.length; i++) {
+    sum = sum + numberArray[i];
+  }
+  console.log(sum);
+};
+console.log(sumNumber());*/
+// Write a function that takes an array and returns a new array with each element doubled.
+/*
+let number = [1, 2, 3, 4, 5];
+let doubleArray = function (number) {
+  let newArray = [];
+  for (let i = 0; i < number.length; i++) {
+    newArray.push(number[i] * 2);
+  }
+  return newArray;
+};
+console.log(doubleArray(number));
+*/
+// Write a function that removes the first and last elements from an array.
+/*
+let array = [1, 2, 3, 4, 5, 6];
+
+let removesArray = function (arr) {
+  arr.shift(); // Removes the first element
+  arr.pop();   // Removes the last element
+  return arr;  // Return the modified array
+};
+
+console.log(removesArray(array)); // Outputs: [2, 3, 4, 5]
+*/
+// let fruits = ["Apple", "Banana", "Cherry"];
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i]);
+// }
+// let copyFruits = fruits.slice(1, 3);
+// console.log(copyFruits); // Outputs: ["Apple", "Banana", "Cherry"]
+/*
+let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+let someFruits = fruits.slice(3, 5);
+console.log(someFruits); // Outputs: ["Banana", "Cherry", "Date"]
+*/
+// Write a function that reverses the order of elements in an array.
+/*
+let fruits = ["Apple", "Banana", "Cherry"];
+
+let reverse = function (arr) {
+  fruits.reverse(arr);
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+};
+console.log(reverse(fruits));
+*/
+/*
+sort an array
+let number = [3, 2, 5, 0, 1];
+number.sort();
+
+for (let i = 0; i < number.length; i++) {
+  console.log(number[i]);
+}
+*/
+// sort an array
+// number.sort();
+/*
+let number = [3, 2, 5, 0, 1];
+
+for (let i = 0; i < number.length ; i++) {
+  console.log(number[i]);
+}
+*/
+// find min and max in an Array
+/*
+let number = [1, 3, 6, 9, 12, 15];
+for (let i = 0; i < number.length; i++) {
+  console.log(Math.min(...number));
+  }
+  */
+/*
+let number = [1, 3, 6, 9, 12, 15, 1, 0, 10];
+// number.sort(function (a, b) {
+//   return a - b;
+// });
+// sort using arrow function
+number.sort((a, b) => a - b);
+for (let i = 0; i < number.length; i++) {
+  console.log(number[i]);
+}
+let minmaxFind = function (number) {
+  let min = Math.min(...number);
+  let max = Math.max(...number);
+  return { min, max };
+};
+console.log(minmaxFind(number));
+*/
+// The spread operator allows an array to be expanded into individual arguments when calling a function. (...)
+function sum(a, b, c) {
+  return a + b + c;
+}
+
+let numbers = [1, 2, 3];
+console.log(sum(...numbers)); // Outputs: 6
